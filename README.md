@@ -3,7 +3,6 @@ Proyecto con SASS, node, gulp
 
 Link de la pagina: https://dumblarghost56.github.io/eco-store/
 
-Mi nombre: Alvaro Moron Parra
 
 Mi usuario es: exmachine956
 
@@ -14,4 +13,3 @@ Nombre del curso: Curso de Fundamentos de Sass: Crea tu Primera Landing Page
 Link del curso: https://platzi.com/cursos/sass/
 
 
-Pd: Se hacer lo que esta en la practica y más pero no aprobe el examen
