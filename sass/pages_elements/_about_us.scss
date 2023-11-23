@@ -1,0 +1,20 @@
+@use "variables" as var;
+@use "mixins" as mx;
+.about-us{
+  @include mx.flex(row,center,center);
+  gap:4rem;
+  padding:2.4rem 0;
+  flex-flow:row wrap;
+  p{
+    color:var.$quaternion-color;
+  }
+  svg{
+    height:10rem;
+    color:var.$text-color;
+  }
+}
+.about-us__content{
+  @include mx.flex(row,center,center);
+  gap:3rem;
+  flex:0 0 30rem
+}

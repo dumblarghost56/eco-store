@@ -1,0 +1,18 @@
+@use "variables" as var;
+@use "mixins" as mx;
+.gallery{
+  @include mx.flex(row,center,center);
+  column-gap:10rem;
+  padding:5rem 0;
+  row-gap:5rem;
+  flex-flow:row wrap;
+  img{
+    max-width:30rem;
+    flex:0 0 30rem;
+    transition:all .3s ease-in-out;
+    border-radius:1.6rem;
+    &:hover{
+     transform:scale(1.1); 
+    }
+  }
+}

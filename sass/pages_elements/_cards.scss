@@ -1,0 +1,42 @@
+@use "variables" as vars;
+@use "mixins" as mx;
+.cards{
+  @include mx.flex(row,center,center);
+  flex-flow:row wrap;
+  row-gap:5rem;
+  column-gap:10rem;
+  padding:5rem 0;
+  &.--home{
+    .card{
+      background-color:vars.$tertiary-color;
+      color:#fff;
+      p,h3,svg{
+        color:inherit
+      }
+    }
+  }
+}
+.card{
+  background-color:vars.$secondary-color;
+  width:100%;
+  padding:2rem;
+  flex:0 0 30rem;
+  border-radius:0.8rem;
+}
+.card__icon{
+  @include mx.flex(row,end,start);
+  padding-bottom:1.2rem;
+  svg{
+    height:2.4rem;
+    color:vars.$text-color;
+  }
+}
+.card__img{
+  padding-bottom:1rem;
+  img{
+    display:block;
+    width:90%;
+    margin:auto;
+    border-radius:0.6rem;
+  }
+}

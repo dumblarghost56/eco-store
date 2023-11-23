@@ -1,0 +1,19 @@
+@use "variables" as vars;
+@use "mixins" as mx;
+.footer{
+  $background:0;
+  background-color:vars.$quaternion-color;
+  padding:3rem 0 2rem 0;
+  h3,p{
+    color:#fff;
+  }
+}
+.social-media{
+  @include mx.flex(row,center,center);
+  gap:4rem; 
+  flex-flow:row wrap;
+  svg{
+    height:3rem;
+    color:#fff;
+  } 
+}

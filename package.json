@@ -1,0 +1,23 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Un proyecto con html,sass y gulp",
+  "main": "gulpFile.js",
+  "scripts": {
+    "sass": "gulp sass",
+    "watch":"gulp watch"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "Gulp"
+  ],
+  "author": "dumblarghost",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.5"
+  }
+}

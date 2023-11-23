@@ -1,0 +1,22 @@
+@use "variables" as vars;
+@use "mixins" as mx;
+.info{
+  @include mx.flex(row,space-between,center);
+  flex-flow:row wrap;
+  gap:1.5rem;
+  .info-section{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    align-items:start;
+  }
+  .img-section{
+    overflow: hidden;
+    border-radius:2rem;
+  }
+  img{
+    max-width:50rem;
+    height:100%;
+    width:100%;
+  }
+}

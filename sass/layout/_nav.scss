@@ -1,0 +1,21 @@
+@use "variables" as vars;
+@use "mixins" as mx;
+.nav .section{
+  @include mx.flex(row,space-between,center);
+  background-color:vars.$primary-color;
+  width:100%;
+  padding:2rem 1.5rem;
+  margin:auto;
+  color:vars.$text-color !important;
+  p{
+    font-size:2rem;
+  }
+  svg{
+    color:vars.$text-color !important;
+    height:2rem;
+  }
+  .nav__icons{
+    display:flex;
+    gap:1.5rem;
+  }
+}
